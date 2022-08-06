@@ -1,0 +1,278 @@
+{% load static %}
+<!DOCTYPE html>
+<html >
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.8.10, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="{% static 'SBlokz/images/sb.png' %}" type="image/x-icon">
+  <meta name="description" content="">
+  <title>Home</title>
+  <link rel="stylesheet" href="{% static 'SBlokz/web/assets/mobirise-icons/mobirise-icons.css' %}">
+  <link rel="stylesheet" href="{% static 'SBlokz/tether/tether.min.css' %}">
+  <link rel="stylesheet" href="{% static 'SBlokz/bootstrap/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'SBlokz/bootstrap/css/bootstrap-grid.min.css' %}">
+  <link rel="stylesheet" href="{% static 'SBlokz/bootstrap/css/bootstrap-reboot.min.css' %}">
+  <link rel="stylesheet" href="{% static 'SBlokz/dropdown/css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'SBlokz/socicon/css/styles.css' %}">
+  <link rel="stylesheet" href="{% static 'SBlokz/theme/css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'SBlokz/mobirise/css/mbr-additional.css' %}" type="text/css">
+  
+  
+  
+</head>
+
+<body>
+  <link rel="stylesheet" href="style.less" class="cid-reJ1MGlwrz" id="menu1-2" data-rv-view="20"><section class="menu cid-reJ1MGlwrz" once="menu" id="menu1-2">
+
+    
+
+    <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+        <div class="menu-logo">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="">
+                         <img src="{% static 'SBlokz/images/sb.png' %}" alt="Mobirise" style="height: 3.8rem;">
+                    </a>
+                </span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="">
+                        SBLOKZ
+                    </a></span>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item">
+                    <a class="nav-link link text-white display-4" href="{% url 'sb-home' %}">
+                        <span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span>
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link text-white display-4" href="{% url 'sb-about' %}">
+                        <span class="mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                        About Us
+                    </a>
+                </li></ul>
+            <div class="navbar-buttons mbr-section-btn">
+                 {% if user.is_authenticated %}
+                    <a class="btn btn-sm btn-primary display-4" href="{% url 'logout' %}">
+                    <span class="mbri-login mbr-iconfont mbr-iconfont-btn"></span>
+                    Logout
+                </a>
+              {% else %}
+                <a class="btn btn-sm btn-primary display-4" href="{% url 'login' %}">
+                    <span class="mbri-login mbr-iconfont mbr-iconfont-btn"></span>
+                    Login
+                </a>
+            </div>
+            <div class="navbar-buttons mbr-section-btn">
+                <a class="btn btn-sm btn-primary display-4" href="{% url 'sb-signup' %}">
+                    <span class="mbri-user mbr-iconfont mbr-iconfont-btn"></span>
+                    SignUp
+                </a>
+                {% endif %}
+            </div>
+        </div>
+    </nav>
+</section>
+
+<section class="engine"><a href="">bootstrap themes</a></section><section class="carousel slide cid-reJ22Omm5y" data-interval="false" id="slider1-3">
+
+    
+
+    <div class="full-screen"><div class="mbr-slider slide carousel" data-pause="true" data-keyboard="false" data-ride="false" data-interval="1900"><ol class="carousel-indicators"><li data-app-prevent-settings="" data-target="#slider1-3" class=" active" data-slide-to="0"></li><li data-app-prevent-settings="" data-target="#slider1-3" data-slide-to="1"></li><li data-app-prevent-settings="" data-target="#slider1-3" data-slide-to="2"></li></ol><div class="carousel-inner" role="listbox"><div class="carousel-item slider-fullscreen-image active" data-bg-video-slide="false" style="background-image: url({% static 'SBlokz/images/logistics1.jpg' %});"><div class="container container-slide"><div class="image_wrapper"><div class="mbr-overlay"></div><img src="{% static 'SBlokz/images/logistics1.jpg' %}"><div class="carousel-caption justify-content-center"><div class="col-10 align-center"><h2 class="mbr-fonts-style display-1">WELCOME TO SBLOKZ</h2><p class="lead mbr-text mbr-fonts-style display-5">The leading game changer in the technology of supply chain management. Try us, and for sure you won't be disappointed by our services.</p></div></div></div></div></div><div class="carousel-item slider-fullscreen-image" data-bg-video-slide="https://www.youtube.com/watch?v=z3wiNLPJhF0"><div class="mbr-overlay"></div><div class="container container-slide"><div class="image_wrapper"><img src="{% static 'SBlokz/images/2.jpg' %}" style="opacity: 0;"><div class="carousel-caption justify-content-center"><div class="col-10 align-left"><h2 class="mbr-fonts-style display-1">USE OF BLOCKCHAIN</h2><p class="lead mbr-text mbr-fonts-style display-5">Specialisation in the use of blockchain is what drives us to provide quality services to our clients.</p></div></div></div></div></div><div class="carousel-item slider-fullscreen-image" data-bg-video-slide="false" style="background-image: url({% static 'SBlokz/images/block.jpg' %});"><div class="container container-slide"><div class="image_wrapper"><div class="mbr-overlay"></div><img src="{% static 'SBlokz/images/block.jpg' %}"><div class="carousel-caption justify-content-center"><div class="col-10 align-right"><h2 class="mbr-fonts-style display-1">COME JOIN US</h2><p class="lead mbr-text mbr-fonts-style display-5">In order to experience what we provide to our customers, we invite you to join us and experience what we have in order to provide you.</p></div></div></div></div></div></div><a data-app-prevent-settings="" class="carousel-control carousel-control-prev" role="button" data-slide="prev" href="#slider1-3"><span aria-hidden="true" class="mbri-left mbr-iconfont"></span><span class="sr-only">Previous</span></a><a data-app-prevent-settings="" class="carousel-control carousel-control-next" role="button" data-slide="next" href="#slider1-3"><span aria-hidden="true" class="mbri-right mbr-iconfont"></span><span class="sr-only">Next</span></a></div></div>
+
+</section>
+
+<section class="features18 popup-btn-cards cid-reJ2FTrUai" id="features18-6">
+
+    
+
+    
+    <div class="container">
+        <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style display-2">
+            Learn more about our premium services
+        </h2>
+        <h3 class="mbr-section-subtitle display-5 align-center mbr-fonts-style mbr-light">
+            Click on the cards to know more
+        </h3>
+        <div class="media-container-row pt-5 ">
+            <div class="card p-3 col-12 col-md-6 col-lg-4">
+                <div class="card-wrapper ">
+                    <div class="card-img">
+                        <div class="mbr-overlay"></div>
+                        <div class="mbr-section-btn text-center">
+                            <a href="{% url 'sb-logistics' %}" class="btn btn-primary display-4">Learn More</a>
+                        </div>
+                        <img src="{% static 'SBlokz/images/size.jpg' %}" alt="Mobirise">
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style display-7">
+                            Logistics
+                        </h4>
+                        <p class="mbr-text mbr-fonts-style align-left display-7">
+                            SBlokz supports the module of providing security within the supply chain. Also, it aims to improve the user experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card p-3 col-12 col-md-6 col-lg-4">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <div class="mbr-overlay"></div>
+                        <div class="mbr-section-btn text-center">
+                            <a href="{% url 'sb-connection' %}" class="btn btn-primary display-4">Learn More</a>
+                        </div>
+                        <img src="{% static 'SBlokz/images/manufacturer-.jpg' %}" alt="Mobirise">
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style display-7">
+                            Connnecting manufacturer to Retailer
+                        </h4>
+                        <p class="mbr-text mbr-fonts-style display-7">
+                           At SBlokz, we believe the equstions between the manufacturer and retailer should be cordial to maintain healthy business relationships.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card p-3 col-12 col-md-6 col-lg-4">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <div class="mbr-overlay"></div>
+                        <div class="mbr-section-btn text-center">
+                            <a href="{% url 'sb-blockchain' %}" class="btn btn-primary display-4">Learn More</a>
+                        </div>
+                        <img src="{% static 'SBlokz/images/bm.jpg' %}" alt="Mobirise">
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style display-7">
+                            Blockchain based service
+                        </h4>
+                        <p class="mbr-text mbr-fonts-style display-7">
+                            SBlokz aims to offer to its customers highly brilliant blockchain based services in order to keep the track of supply chain.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+</section>
+
+<section class="cid-reJ2Rtc1g1" id="footer2-7">
+
+    
+
+    
+
+    <div class="container">
+        <div class="media-container-row content mbr-white">
+            <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                <p class="mbr-text">
+                    <strong>Address</strong>
+                    <br>
+                    <br>SB Jain Institute of technology, management and research
+                    <br>Nagpur, 440013
+                    <br>
+                    <br>
+                    <br><strong>Contacts</strong>
+                    <br>
+                    <br>Email: support@sblokz.com
+                    <br>Phone: +91 8999593121
+                </p>
+            </div>
+            <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                <p class="mbr-text">
+                    <strong>Links</strong>
+                    <br>
+                    <br><a class="text-primary" href="">Know More</a>
+                    <br><a class="text-primary" href="">Contribute</a>
+                    <br><strong>Feedback</strong>
+                    <br>
+                    <br>Please send us your ideas, bug reports, suggestions! Any feedback would be appreciated.
+                </p>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="google-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.6115859690253!2d78.97313561536882!3d21.207583385901803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4ea2aa2d93c49%3A0xc0c545a2f0259069!2sS+B+Jain+Institute+Of+Technology+Cross!5e0!3m2!1sen!2sin!4v1547103312836" width="600" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe></div>
+            </div>
+        </div>
+        <div class="footer-lower">
+            <div class="media-container-row">
+                <div class="col-sm-12">
+                    <hr>
+                </div>
+            </div>
+            <div class="media-container-row mbr-white">
+                <div class="col-sm-6 copyright">
+                    <p class="mbr-text mbr-fonts-style display-7">
+                        © Copyright 2019 SBlokz - All Rights Reserved
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-list align-right">
+                        <div class="soc-item">
+                            <a href="" target="_blank">
+                                <span class="socicon-twitter socicon mbr-iconfont mbr-iconfont-social"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="" target="_blank">
+                                <span class="socicon-facebook socicon mbr-iconfont mbr-iconfont-social"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="" target="_blank">
+                                <span class="socicon-youtube socicon mbr-iconfont mbr-iconfont-social"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="" target="_blank">
+                                <span class="socicon-instagram socicon mbr-iconfont mbr-iconfont-social"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="" target="_blank">
+                                <span class="socicon-googleplus socicon mbr-iconfont mbr-iconfont-social"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="" target="_blank">
+                                <span class="socicon-behance socicon mbr-iconfont mbr-iconfont-social"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <script src="{% static 'SBlokz/web/assets/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'SBlokz/popper/popper.min.js' %}"></script>
+  <script src="{% static 'SBlokz/tether/tether.min.js' %}"></script>
+  <script src="{% static 'SBlokz/bootstrap/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'SBlokz/smoothscroll/smooth-scroll.js' %}"></script>
+  <script src="{% static 'SBlokz/dropdown/js/script.min.js' %}"></script>
+  <script src="{% static 'SBlokz/ytplayer/jquery.mb.ytplayer.min.js' %}"></script>
+  <script src="{% static 'SBlokz/vimeoplayer/jquery.mb.vimeo_player.js' %}"></script>
+  <script src="{% static 'SBlokz/mbr-popup-btns/mbr-popup-btns.js' %}"></script>
+  <script src="{% static 'SBlokz/bootstrapcarouselswipe/bootstrap-carousel-swipe.js' %}"></script>
+  <script src="{% static 'SBlokz/touchswipe/jquery.touch-swipe.min.js' %}"></script>
+  <script src="{% static 'SBlokz/theme/js/script.js' %}"></script>
+  <script src="{% static 'SBlokz/slidervideo/script.js' %}"></script>
+  
+  
+</body>
+</html>
