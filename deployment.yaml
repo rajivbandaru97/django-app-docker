@@ -1,0 +1,34 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: django-test-service
+spec:
+  selector:
+    app: django-blockchain-app
+  ports:
+  - protocol: "TCP"
+    port: 6000
+    targetPort: 8000
+  type: LoadBalancer
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: django-blockchain-app
+spec:
+  selector:
+    matchLabels:
+      app: django-blockchain-app
+  replicas: 5
+  template:
+    metadata:
+      labels:
+        app: django-blockchain-app
+    spec:
+      containers:
+      - name: django-blockchain-app
+        image: blockchain-3
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8000
